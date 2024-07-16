@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<mat-card>
+  <mat-toolbar color="primary">Detalhes do Medico</mat-toolbar>
+    <mat-card-content>
+      <form [formGroup]="form" class="min-width">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Registro" formControlName="registro">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Email" formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <input matInput placeholder="cpf" formControlName="cpf">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <input matInput placeholder="senha" formControlName="senha">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <input matInput placeholder="nome" formControlName="nome_completo">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <input matInput placeholder="telefone" formControlName="telefone">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="enviarDados()">Salvar</button>
+    <button mat-raised-button color="warn" (click)="onCancel()">Cancelar</button>
+  </mat-card-actions>
+</mat-card>
+
+
